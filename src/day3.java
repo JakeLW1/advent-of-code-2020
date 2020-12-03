@@ -55,7 +55,7 @@ public class tabogganTrajectory {
 		int checkpoint4 = 0;
 		int checkpoint5 = 0;
 		
-		for(int i = 1; i < bigMap.size(); i++) {
+		for(int i = 0; i < bigMap.size(); i++) {
 			for(int j = checkpoint2; j < bigMap.get(i).length(); j++) {
 				if(bigMap.get(i).charAt(j) == '.') {
 					treeMiss2++;
@@ -68,7 +68,7 @@ public class tabogganTrajectory {
 			}
 			checkpoint2++;
 		}
-		for(int i = 1; i < bigMap.size(); i++) {
+		for(int i = 0; i < bigMap.size(); i++) {
 			for(int j = checkpoint1; j < bigMap.get(i).length(); j+=3) {
 				if(bigMap.get(i).charAt(j) == '.') {
 					treeMiss1++;
@@ -81,7 +81,7 @@ public class tabogganTrajectory {
 			}
 			checkpoint1+=3;
 		}
-		for(int i = 1; i < bigMap.size(); i++) {
+		for(int i = 0; i < bigMap.size(); i++) {
 			for(int j = checkpoint3; j < bigMap.get(i).length(); j+=5) {
 				if(bigMap.get(i).charAt(j) == '.') {
 					treeMiss3++;
@@ -94,7 +94,7 @@ public class tabogganTrajectory {
 			}
 			checkpoint3+=5;
 		}
-		for(int i = 1; i < bigMap.size(); i++) {
+		for(int i = 0; i < bigMap.size(); i++) {
 			for(int j = checkpoint4; j < bigMap.get(i).length(); j+=7) {
 				if(bigMap.get(i).charAt(j) == '.') {
 					treeMiss4++;
@@ -107,7 +107,7 @@ public class tabogganTrajectory {
 			}
 			checkpoint4+=7;
 		}
-		for(int i = 1; i < bigMap.size(); i+=2) {
+		for(int i = 0; i < bigMap.size(); i+=2) {
 			for(int j = checkpoint5; j < bigMap.get(i).length(); j++) {
 				if(bigMap.get(i).charAt(j) == '.') {
 					treeMiss5++;

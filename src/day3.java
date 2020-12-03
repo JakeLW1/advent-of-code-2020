@@ -10,7 +10,7 @@ public class day3 {
 
 	public static void main(String[] args) {
 		
-		String fileName = "input.txt"; //find file
+		String fileName = "./resources/input.txt"; //find file
 		File file = new File(fileName); //make file into file
 		
 		List<String> map = new ArrayList<>(); //small map

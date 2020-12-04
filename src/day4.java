@@ -9,7 +9,7 @@ public class day4 {
 
 	public static void main(String[] args) throws IOException { //file read exception handling
 		
-		BufferedReader in = new BufferedReader(new FileReader("input.txt")); //read that file
+		BufferedReader in = new BufferedReader(new FileReader("./resources/passports.txt")); //read that file
 		
 		String[] validComps = {"byr", "iyr", "eyr", "hgt", "hcl", "ecl", "pid"}; //valid passport components
 		List<String> passports = new ArrayList<String>(); //blank list for everyones passports

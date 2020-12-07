@@ -12,7 +12,7 @@ public class day7 {
 
 	public static void main(String[] args) {
 		
-		String fileName = "bags.txt"; //find file
+		String fileName = "./resources/bags.txt"; //find file
 		File file = new File(fileName); //make file into file
 		
 		List<String> bags = new ArrayList<>(); //empty string list
